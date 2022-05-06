@@ -18,6 +18,10 @@ body {
 }
 
 .card{
-   width: 22rem;
-   min-height: 30rem;
+   width: 25rem;
+   min-height: 31rem;
+}
+
+img{
+    height: 250px;
 }
