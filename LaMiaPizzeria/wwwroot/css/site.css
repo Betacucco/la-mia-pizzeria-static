@@ -16,3 +16,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.card{
+   width: 22rem;
+   min-height: 30rem;
+}

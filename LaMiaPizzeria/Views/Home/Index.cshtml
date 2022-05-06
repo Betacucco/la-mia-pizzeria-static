@@ -1,8 +1,134 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="~/css/site.css" rel="stylesheet" />
+
+    <title>Pizzeria</title>
+  </head>
+  <body>
+      <header>
+          <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand">Pizzeria da Marco</span>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            </div>
+        </nav>
+      </header>
+      
+      <main>
+         <div class="row m-4 text-center">
+            <h1 class="text-center">LE NOSTRE PIZZE</h1>
+          </div>
+          <div class="conteiner-fluid">
+              <div class="row m-4 card-group text-center align-content-center">
+                  <div class="col-3">
+                <div class="card border-dark">
+                    <img src="~/img/pizza-margherita.jpg" class="card-img-top d-block" alt="pizza margherita">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Margherita</h5>
+                            <p class="card-text">Ingredienti:<br/> pomodoro, basilico e mozzarella</p>
+                            <p class="card-text">Prezzo: <strong>5,00 &euro;</strong></p>
+                            <a href="#" class="btn btn-dark">Aggiungi al carrello</a>     
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-dark">
+                    <img src="~/img/pizza-napoli.jpg" class="card-img-top d-block" alt="pizza napoli">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Napoli</h5>
+                            <p class="card-text">Ingredienti:<br/>pomodoro, mozzarella e alici</p>
+                            <p class="card-text">Prezzo: <strong>4,50 &euro;</strong></p>
+                            <a href="#" class="btn btn-dark">Aggiungi al carrello</a>     
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-dark">
+                    <img src="~/img/pizza-4formaggi.jpg" class="card-img-top d-block" alt="pizza 4 formaggi">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza 4 Formaggi</h5>
+                            <p class="card-text">Ingredienti:<br/> mozzarella,parmigiano, pecorino e gorgonzola</p>
+                            <p class="card-text">Prezzo: <strong>6,00 &euro;</strong></p>
+                            <a href="#" class="btn btn-dark">Aggiungi al carrello</a>     
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-dark">
+                    <img src="~/img/pizza-bolognese.jpg" class="card-img-top" alt="pizza bolognese">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Bolognese</h5>
+                            <p class="card-text">Ingredienti:<br/> mortadella, stracciatella e granella di pistacchio</p>
+                            <p class="card-text">Prezzo: <strong>8,00 &euro;</strong></p>
+                            <a href="#" class="btn btn-dark">Aggiungi al carrello</a>     
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row m-4 card-group text-center">
+                  <div class="col-3">
+                <div class="card border-dark">
+                    <img src="~/img/pizza-boscaiola.jpg" class="card-img-top" alt="pizza boscaiola">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Boscaiola</h5>
+                            <p class="card-text">Ingredienti:<br/> mozzarella, funghi champignon e salsiccia</p>
+                            <p class="card-text">Prezzo: <strong>7,00 &euro;</strong></p>
+                            <a href="#" class="btn btn-dark">Aggiungi al carrello</a>     
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-dark">
+                    <img src="~/img/pizza-capricciosa.jpg" class="card-img-top" alt="pizza capricciosa">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Capricciosa</h5>
+                            <p class="card-text">Ingredienti:<br/>pomodoro, mozzarella, prosciutto cotto, carciofi, olive</p>
+                            <p class="card-text">Prezzo: <strong>7,50 &euro;</strong></p>
+                            <a href="#" class="btn btn-dark">Aggiungi al carrello</a>     
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-dark">
+                    <img src="~/img/pizza-mari-monti.jpg" class="card-img-top" alt="pizza mari e monti">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Mari e Monti</h5>
+                            <p class="card-text">Ingredienti:<br/>mozzarella, funghi misti e cozze</p>
+                            <p class="card-text">Prezzo: <strong>9,00 &euro;</strong></p>
+                            <a href="#" class="btn btn-dark">Aggiungi al carrello</a>     
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="card border-dark">
+                    <img src="~/img/pizza-sfiziosa.jpg" class="card-img-top" alt="pizza sfiziosa">
+                        <div class="card-body">
+                            <h5 class="card-title">Pizza Sfiziosa</h5>
+                            <p class="card-text">Ingredienti:<br/>prosciutto crudo, mozzarella e noci</p>
+                            <p class="card-text">Prezzo: <strong>8,00 &euro;</strong></p>
+                            <a href="#" class="btn btn-dark">Aggiungi al carrello</a>     
+                        </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
